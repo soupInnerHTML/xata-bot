@@ -1,11 +1,15 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 exports.grid = exports.flat = void 0;
-const lodash_1 = __importDefault(require("lodash"));
-exports.flat = Object.values;
+var _chunk2 = _interopRequireDefault(require("lodash/chunk"));
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { "default": e }; }
+var flat = exports.flat = Object.values;
+
 // array flat
-const grid = (obj, perRow = 2) => lodash_1.default.chunk(Object.values(obj), perRow);
-exports.grid = grid;
+var grid = exports.grid = function grid(obj) {
+  var perRow = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 2;
+  return (0, _chunk2["default"])(flat(obj), perRow);
+};

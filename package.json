@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "babel src --out-dir dist",
+    "build": "babel src --extensions \".ts,.js\" --out-dir dist",
     "start": "nodemon --exec ts-node src/index.ts"
   },
   "author": "",

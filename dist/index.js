@@ -1,18 +1,16 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
+
 require("./types/env.types");
-const dotenv_1 = __importDefault(require("dotenv"));
-const services_1 = require("./services");
-const xataBot_1 = require("./xataBot");
-dotenv_1.default.config();
-const statusService = new services_1.StatusService();
-const usersService = new services_1.UsersService();
-const xataBot = new xataBot_1.XataBot({
-    token: process.env.BOT_TOKEN,
-    usersService,
-    statusService
+var _dotenv = _interopRequireDefault(require("dotenv"));
+var _services = require("./services");
+var _xataBot = require("./xataBot");
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { "default": e }; }
+_dotenv["default"].config();
+var statusService = new _services.StatusService();
+var usersService = new _services.UsersService();
+var xataBot = new _xataBot.XataBot({
+  token: process.env.BOT_TOKEN,
+  usersService: usersService,
+  statusService: statusService
 });
 xataBot.startBot();

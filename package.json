@@ -5,7 +5,8 @@
   "scripts": {
     "build": "babel src --extensions \".ts,.js\" --out-dir dist",
     "dev": "nodemon --exec ts-node src/index.ts",
-    "prod": "ts-node src/index.ts"
+    "prod": "ts-node src/index.ts",
+    "start": "yarn prod"
   },
   "author": "",
   "license": "ISC",

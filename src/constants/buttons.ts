@@ -21,6 +21,10 @@ export const INLINE_SET_STATUS_BUTTONS: InlineButtons<INLINE_SET_STATUS_BUTTONS_
         text: "Все спокойно 🙂",
         callbackData: INLINE_SET_STATUS_BUTTONS_ACTION.CALM,
     },
+    [INLINE_SET_STATUS_BUTTONS_ACTION.LEARN]: {
+        text: "Андрей - Консультации / Уроки 🎓",
+        callbackData: INLINE_SET_STATUS_BUTTONS_ACTION.LEARN,
+    },
     [INLINE_SET_STATUS_BUTTONS_ACTION.SILENCE]: {
         text: "Тихий час 💤",
         callbackData: INLINE_SET_STATUS_BUTTONS_ACTION.SILENCE,

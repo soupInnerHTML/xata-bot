@@ -12,6 +12,7 @@ export enum INLINE_STARTUP_BUTTONS_ACTION {
 
 export enum INLINE_SET_STATUS_BUTTONS_ACTION {
     CALM = "CALM",
+    LEARN = "LEARN",
     SILENCE = "SILENCE",
     VLAD = "VLAD",
     GUESTS = "GUESTS",

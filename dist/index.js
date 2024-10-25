@@ -1,10 +1,10 @@
 "use strict";
 
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 require("./types/env.types");
 var _dotenv = _interopRequireDefault(require("dotenv"));
 var _services = require("./services");
 var _xataBot = require("./xataBot");
-function _interopRequireDefault(e) { return e && e.__esModule ? e : { "default": e }; }
 _dotenv["default"].config();
 var statusService = new _services.StatusService();
 var usersService = new _services.UsersService();

@@ -1,11 +1,11 @@
 "use strict";
 
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.grid = exports.flat = void 0;
 var _chunk2 = _interopRequireDefault(require("lodash/chunk"));
-function _interopRequireDefault(e) { return e && e.__esModule ? e : { "default": e }; }
 var flat = exports.flat = Object.values;
 
 // array flat

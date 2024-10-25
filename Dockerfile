@@ -19,5 +19,8 @@ COPY . .
 # Порт, который использует Railway (например, 3000)
 EXPOSE 3000
 
+ENV BOT_TOKEN=${BOT_TOKEN}
+ENV API_ENDPOINT=${API_ENDPOINT}
+
 # Команда для запуска бота
 CMD ["yarn", "prod"]

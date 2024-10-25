@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "build": "npx tsc && node dist/index.js",
-    "start": "nodemon"
+    "dev": "nodemon",
+    "prod": "node dist/index.js"
   },
   "author": "",
   "license": "ISC",
